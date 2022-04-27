@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  rabbitmq:
+    image: rabbitmq:latest
+    hostname: rabbitmq
+    ports:
+      - "5672:5672"
+  redis:
+    image: redis:latest
+    hostname: redis
+    ports:
+      - "6379:6379"
